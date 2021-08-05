@@ -1,8 +1,8 @@
 import Container from '@material-ui/core/Container';
 import {ItemPreview, Slate, SlateLineup} from "../../types";
-import {getSlateConfig, getSlatePreviewItems, getSlatesConfig} from "../../remote/slates";
+import {getSlateConfig, getSlatePreviewItems, getSlatesConfig} from "../../data/local/slates";
 import {SlateDetailEl} from "../../components/slate";
-import {getSlateLineupBySlateId} from "../../remote/slateLineups";
+import {getSlateLineupsBySlateId} from "../../data/local/slateLineups";
 
 export default function Index({slate, lineups,previewItems} : {slate: Slate, lineups: SlateLineup[], previewItems: ItemPreview[] | undefined}) {
   return (
@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({params}: {params: any}) {
   const {id} = params;
   const slate = await getSlateConfig(id);
-  const lineups = await getSlateLineupBySlateId(id);
+  const lineups = await getSlateLineupsBySlateId(id);
   // TODO: move previewItems to client side
   const previewItems = await getSlatePreviewItems(id) || null;
 

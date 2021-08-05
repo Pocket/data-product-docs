@@ -1,7 +1,7 @@
 import Container from '@material-ui/core/Container';
 import {SlateLineupPreviewEl}  from "../../components/slateLineup";
 import {SlateLineup} from "../../types";
-import {getSlateLineupsConfig} from "../../remote/slateLineups";
+import {getSlateLineupsConfig} from "../../data/local/slateLineups";
 
 export default function Home({slateLineups} : {slateLineups: SlateLineup[]}) {
   return (

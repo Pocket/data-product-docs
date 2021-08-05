@@ -8,6 +8,8 @@ export type Slate = {
   id: string;
   displayName: string;
   description: string;
+  sla: string;
+  refresh: string;
   experiments: SlateExperiment[];
 }
 

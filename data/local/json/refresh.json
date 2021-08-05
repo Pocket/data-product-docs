@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "nightly",
+    "description": "Every night"
+  },
+  {
+    "slug": "hourly",
+    "description": "Every hour"
+  }
+]

@@ -1,5 +1,5 @@
 import {ItemPreview, SlateLineup} from "../../types";
-import {getSlateLineupConfig, getSlateLineupsConfig} from "../../remote/slateLineups";
+import {getSlateLineupConfig, getSlateLineupsConfig} from "../../data/local/slateLineups";
 import {SlateLineupDetailEl} from "../../components/slateLineup";
 
 export default function Index({slateLineup} : {slateLineup: SlateLineup}) {

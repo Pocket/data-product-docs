@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "experimental",
+    "description": "Use at your own risk"
+  },
+  {
+    "slug": "stable",
+    "description": "There are probably better sla definitions"
+  }
+]

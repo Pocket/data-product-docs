@@ -3,6 +3,8 @@
     "id": "de254c5d-57a7-4553-850f-153ee385014d",
     "displayName": "Editors' Picks",
     "description": "Curated items that are over a week old",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "default",
@@ -32,6 +34,8 @@
     "id": "2389f563-bd42-411d-bca2-0966638053e8",
     "displayName": "Editors' Picks",
     "description": "Curated items that are over a week old without syndicated",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "default",
@@ -61,6 +65,8 @@
     "id": "2e3ddc90-8def-46d7-b85f-da7525c66fb1",
     "displayName": "Editors' Picks",
     "description": "Curated items excluding syndicated that are at most a week old",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "default",
@@ -90,6 +96,8 @@
     "id": "9dc26792-10ed-4fbe-a13d-6cce3a89b0a1",
     "displayName": "Editors' Picks",
     "description": "QA slate duplicated from 2e3ddc90-8def-46d7-b85f-da7525c66fb1 that is only used for QA purposes",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "default",
@@ -119,6 +127,8 @@
     "id": "48e766be-5e96-46fb-acbf-55fee3ae8a28",
     "displayName": "Editors' Picks",
     "description": "Top 5 curated items excluding syndicated that are at most a week old",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "default",
@@ -150,6 +160,8 @@
     "id": "0737b00e-a21e-4875-a4c7-3e14926d4acf",
     "displayName": "Editors' Picks",
     "description": "Curated items including syndicated that are at most a week old",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "default",
@@ -169,6 +181,8 @@
     "displayName": "Stay informed with this curated guide to the global outbreak.",
     "description": "Coronavirus Slate",
     "curatorTopicLabel": "COVID-19",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated coronavirus items",
@@ -186,6 +200,8 @@
     "id": "631d8077-1462-4397-ad0a-aa340c27570a",
     "displayName": "Editors' Picks, Just For You",
     "description": "Curated Personalized",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "recit-personalized curated",
@@ -204,6 +220,8 @@
     "id": "ad73c061-5ac5-458f-8691-ab071f7eadd7",
     "displayName": "Personalized picks popular with pocket readers",
     "description": "Best of Personalized",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "recit-personalized",
@@ -221,6 +239,8 @@
     "id": "d9c6ddfa-a58d-402d-9664-4190ba197ea6",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Business Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic business items, thompson-sampling30",
@@ -251,6 +271,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Business Slate",
     "curatorTopicLabel": "Business",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated business items",
@@ -280,6 +302,8 @@
     "displayName": "Business",
     "description": "Curated Not New Tab Business Slate",
     "curatorTopicLabel": "Business",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab business items",
@@ -298,6 +322,8 @@
     "id": "e6c8db8d-cae7-4947-a57e-872dec639472",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Career Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic career items, thompson-sampling30",
@@ -328,6 +354,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Career Slate",
     "curatorTopicLabel": "Career",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated career items",
@@ -357,6 +385,8 @@
     "displayName": "Career",
     "description": "Curated Not New Tab Career Slate",
     "curatorTopicLabel": "Career",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab career items",
@@ -375,6 +405,8 @@
     "id": "8aaac382-9c27-42ab-9470-ac1dfc666262",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Education Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic education items, thompson-sampling30",
@@ -405,6 +437,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Education Slate",
     "curatorTopicLabel": "Education",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated education items",
@@ -434,6 +468,8 @@
     "displayName": "Education",
     "description": "Curated Not New Tab Education Slate",
     "curatorTopicLabel": "Education",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab education items",
@@ -452,6 +488,8 @@
     "id": "ce96db55-f32e-48f1-929f-216eb2e8c082",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Entertainment Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic entertainment items, thompson-sampling30",
@@ -482,6 +520,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Entertainment Slate",
     "curatorTopicLabel": "Entertainment",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated entertainment items",
@@ -511,6 +551,8 @@
     "displayName": "Entertainment",
     "description": "Curated Not New Tab Entertainment Slate",
     "curatorTopicLabel": "Entertainment",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab entertainment items",
@@ -529,6 +571,8 @@
     "id": "884414d5-502d-4e1a-8e70-1dc8eb4a345a",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Food Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic food items, thompson-sampling30",
@@ -559,6 +603,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Food Slate",
     "curatorTopicLabel": "Food",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated food items",
@@ -588,6 +634,8 @@
     "displayName": "Food",
     "description": "Curated Not New Tab Food Slate",
     "curatorTopicLabel": "Food",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab food items",
@@ -606,6 +654,8 @@
     "id": "44dff273-3604-40e9-a0b5-bf3852581990",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Gaming Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic gaming items, thompson-sampling30",
@@ -636,6 +686,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Gaming Slate",
     "curatorTopicLabel": "Gaming",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated gaming items",
@@ -665,6 +717,8 @@
     "displayName": "Gaming",
     "description": "Curated Not New Tab Gaming Slate",
     "curatorTopicLabel": "Gaming",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab gaming items",
@@ -683,6 +737,8 @@
     "id": "494eaa68-f048-4f52-bb9a-5e7d2526f5cb",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Health Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic health items, thompson-sampling30",
@@ -713,6 +769,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Health Slate",
     "curatorTopicLabel": "Health & Fitness",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated health items",
@@ -742,6 +800,8 @@
     "displayName": "Health & Fitness",
     "description": "Curated Not New Tab Health Slate",
     "curatorTopicLabel": "Health & Fitness",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab health items",
@@ -760,6 +820,8 @@
     "id": "e6600ffe-b65a-42d3-b570-f460f3d7326e",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Parenting Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic parenting items, thompson-sampling30",
@@ -779,6 +841,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Parenting Slate",
     "curatorTopicLabel": "Parenting",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated parenting items",
@@ -808,6 +872,8 @@
     "displayName": "Parenting",
     "description": "Curated Not New Tab Parenting Slate",
     "curatorTopicLabel": "Parenting",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab parenting items",
@@ -826,6 +892,8 @@
     "id": "72ce0827-9dbc-470f-9722-39476daaeb0f",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Personal Finance Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic personal finance items, thompson-sampling30",
@@ -856,6 +924,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Personal Finance Slate",
     "curatorTopicLabel": "Personal Finance",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated personal finance items",
@@ -885,6 +955,8 @@
     "displayName": "QA slate duplicated from 0c09627b-a409-4768-b87d-7e1d29259785, that is only used for QA purposes",
     "description": "Curated Personal Finance Slate",
     "curatorTopicLabel": "Personal Finance",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated personal finance items",
@@ -914,6 +986,8 @@
     "displayName": "Personal Finance",
     "description": "Curated Not New Tab Personal Finance Slate",
     "curatorTopicLabel": "Personal Finance",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab personal finance items",
@@ -932,6 +1006,8 @@
     "id": "9901851d-ea76-4667-8dc7-0c1677ecb910",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Politics Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic politics items, thompson-sampling30",
@@ -962,6 +1038,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Politics Slate",
     "curatorTopicLabel": "Politics",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated politics items",
@@ -991,6 +1069,8 @@
     "displayName": "Politics",
     "description": "Curated Not New Tab Politics Slate",
     "curatorTopicLabel": "Politics",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab politics items",
@@ -1009,6 +1089,8 @@
     "id": "ab6048ca-5c61-4e87-aefd-7a612b60ab7b",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Science Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic science items, thompson-sampling30",
@@ -1039,6 +1121,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Science Slate",
     "curatorTopicLabel": "Science",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated science items",
@@ -1068,6 +1152,8 @@
     "displayName": "Science",
     "description": "Curated Not New Tab Science Slate",
     "curatorTopicLabel": "Science",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab science items",
@@ -1086,6 +1172,8 @@
     "id": "47688fcf-2bbb-4e0e-a02e-1f68c248a67e",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Self-Improvement Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic self-improvement items, thompson-sampling30",
@@ -1116,6 +1204,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Self-Improvement Slate",
     "curatorTopicLabel": "Self Improvement",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated self-improvement items",
@@ -1145,6 +1235,8 @@
     "displayName": "Self Improvement",
     "description": "Curated Not New Tab Self Improvement Slate",
     "curatorTopicLabel": "Self Improvement",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab self improvement items",
@@ -1163,6 +1255,8 @@
     "id": "8a495385-9972-4d0e-b93e-4234f4897939",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Sports Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic sports items, thompson-sampling30",
@@ -1193,6 +1287,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Sports Slate",
     "curatorTopicLabel": "Sports",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated sports items",
@@ -1222,6 +1318,8 @@
     "displayName": "Sports",
     "description": "Curated Not New Tab Sports Slate",
     "curatorTopicLabel": "Sports",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab sports items",
@@ -1240,6 +1338,8 @@
     "id": "fa61096a-b681-4251-b299-2fda06c49ebf",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Technology Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic technology items, thompson-sampling30",
@@ -1270,6 +1370,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Technology Slate",
     "curatorTopicLabel": "Technology",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated technology items",
@@ -1299,6 +1401,8 @@
     "displayName": "Technology",
     "description": "Curated Not New Tab Technology Slate",
     "curatorTopicLabel": "Technology",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab technology items",
@@ -1317,6 +1421,8 @@
     "id": "d024ce9c-ed96-453f-a81e-8a0b850681e7",
     "displayName": "Popular with Pocket readers  Stories from across the web",
     "description": "Algorithmic Travel Slate",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "algorithmic travel items, thompson-sampling30",
@@ -1347,6 +1453,8 @@
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "Curated Travel Slate",
     "curatorTopicLabel": "Travel",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated travel items",
@@ -1387,6 +1495,8 @@
     "displayName": "Travel",
     "description": "Curated Not New Tab Travel Slate",
     "curatorTopicLabel": "Travel",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "curated not new tab travel items",
@@ -1405,6 +1515,8 @@
     "id": "0f322865-64e6-472d-8147-b3d6637a7d67",
     "displayName": "Our most-read Collections",
     "description": "Pocket Collections",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "All collections",
@@ -1422,6 +1534,8 @@
     "id": "b70d65c6-9171-40bf-bddb-5a60d42dd03f",
     "displayName": "Our most-read Collections",
     "description": "QA Slate duplicated from 0f322865-64e6-472d-8147-b3d6637a7d67 that is only used for QA purposes",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "All collections",
@@ -1439,6 +1553,8 @@
     "id": "4d95bade-8a43-4700-9879-3a73ba1da640",
     "displayName": "There’s nothing like getting lost in a fascinating story — and now is a better time than any to dive into another world.",
     "description": "10 Incredible Long-Reads That’ll Transport You to Another Time and Place",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "10 incredible long reads collection",
@@ -1456,6 +1572,8 @@
     "id": "8944f662-cfc7-4fcb-a510-55a8589b08e7",
     "displayName": "There’s nothing better for your health, wallet, or personal sense of accomplishment than learning how to cook. We’ve pulled together the best resources to help you establish confidence in the kitchen, from proper preparation and creative shortcuts to mastering simple but brilliant techniques. Grab your knives (carefully!) and let’s get started.",
     "description": "How to start cooking collection items",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "How to start cooking",
@@ -1473,6 +1591,8 @@
     "id": "626397d3-fa4e-4299-8d07-cbeaa269ebc1",
     "displayName": "Ten Minutes or Less",
     "description": "Curated short reads excluding syndicated",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "No syndicated short reads",
@@ -1491,6 +1611,8 @@
     "id": "8fa462a6-81d1-47ee-8de3-1e5e0030e6d6",
     "displayName": "Long Reads Worth the Time",
     "description": "Curated long reads excluding syndicated",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "No syndicated long reads",
@@ -1509,6 +1631,8 @@
     "id": "2f2a3568-901f-4655-8735-daf67e8ecc5d",
     "displayName": "In Case You Missed It",
     "description": "Curated by our editors Stories to fuel your mind",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "Syndicated by total score",
@@ -1522,10 +1646,12 @@
       }
     ]
   },
-    {
+  {
     "id": "042a8b55-4999-4acb-a6fe-1a344f90cc3c",
     "displayName": "Curated by our editors Stories to fuel your mind",
     "description": "German Curated Recommendations",
+    "sla": "experimental",
+    "refresh": "nightly",
     "experiments": [
       {
         "description": "German Curated Recommendations by Approval Time",

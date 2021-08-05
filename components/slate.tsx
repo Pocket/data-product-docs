@@ -8,17 +8,6 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import HelpIcon from '@material-ui/icons/Help';
-import {Help} from "@material-ui/icons";
-
-export function SlatePreviewEl({slate}: {slate: Slate}) {
-  return (
-    <p>
-      <h3><Link href={`/slate/${slate.id}`}>{slate.description}</Link></h3>
-      <h4>{slate.displayName}</h4>
-      <div>Id: {slate.id}</div>
-    </p>
-  );
-}
 
 function ExperimentPreviewEl({experiment}: {experiment: SlateExperiment}) {
   return (

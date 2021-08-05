@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="38d2ad59-d8fb-4bfa-9d31-5e1d27b07be5" name="Default Changelist" comment="cka">
       <change afterPath="$PROJECT_DIR$/../recommendation-api/app/json/corpus.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../recommendation-api/app/json/refresh.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../recommendation-api/app/json/sla.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../recommendation-api/app/json/surface.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/item.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/navigation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/slate.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/slateLineup.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/slate_configs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/slate_lineup_configs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/slate-lineup/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/slate-lineup/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/slate/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/remote/slateLineups.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/remote/slates.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.aws/lib/pipeline-stack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/local/json/corpus.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/local/json/refresh.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/local/json/sla.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/local/json/surface.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/local/util.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../recommendation-api/app/json/slate_configs.json" beforeDir="false" afterPath="$PROJECT_DIR$/../recommendation-api/app/json/slate_configs.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.aws/bin/aws.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.aws/bin/aws.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.aws/lib/docs-stack.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.aws/lib/docs-stack.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.aws/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/.aws/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.aws/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/.aws/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/slate-docs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/slate-docs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/slate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/slate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/slate_configs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/json/slate_configs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/slate_lineup_configs.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/json/slate_lineup_configs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/slate-lineup/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/slate-lineup/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/slate-lineup/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/slate-lineup/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/slate/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/slate/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/slate/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/slate/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remote/slateLineups.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/slateLineups.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/remote/slates.ts" beforeDir="false" afterPath="$PROJECT_DIR$/data/local/slates.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types.d.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +61,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -65,18 +70,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/remote" />
       <recent name="$PROJECT_DIR$/../recommendation-api/app/json" />
-      <recent name="$PROJECT_DIR$/pages/slate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/local/json" />
+      <recent name="$PROJECT_DIR$/data/local" />
       <recent name="$PROJECT_DIR$/styles" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/pages/slate" />
-      <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -87,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1628027620088</updated>
-      <workItem from="1628027621433" duration="24809000" />
+      <workItem from="1628027621433" duration="39851000" />
     </task>
     <servers />
   </component>

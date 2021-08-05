@@ -1,9 +1,10 @@
-import {SlateLineup} from "../types";
 import { promises as fs } from 'fs'
+import {SlateLineup} from "../../types";
 import path from 'path'
+import {getSlateLineupsBySlateIdFromLineup} from "./util";
 
 export async function getSlateLineupsConfig() : Promise<SlateLineup[]> {
-  const filePath = path.join(process.cwd(), 'data', 'slate_lineup_configs.json');
+  const filePath = path.join(process.cwd(), 'data', 'local', 'json', 'slate_lineup_configs.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
 
   const slates = JSON.parse(fileContents);
@@ -16,8 +17,8 @@ export async function getSlateLineupConfig(id: string) : Promise<SlateLineup | u
   return lineups.find((sl: SlateLineup) => sl.id === id);
 }
 
-export async function getSlateLineupBySlateId(id: string) : Promise<SlateLineup[]> {
+export async function getSlateLineupsBySlateId(id: string) : Promise<SlateLineup[]> {
   const lineups = await getSlateLineupsConfig();
 
-  return lineups.filter(l => l.experiments.find(e => e.slates.includes(id)));
+  return getSlateLineupsBySlateIdFromLineup(id, lineups);
 }

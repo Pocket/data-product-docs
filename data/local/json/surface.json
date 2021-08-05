@@ -1,0 +1,25 @@
+[
+  {
+    "slug": "firefox-desktop-new-tab",
+    "description": "Firefox Desktop New Tab"
+  },
+  {
+    "slug": "firefox-android-new-tab",
+    "description": "Firefox Android New Tab"
+  },
+  {
+    "slug": "discover-home",
+    "description": "Discover Home",
+    "exampleUrl": "https://getpocket.com/explore"
+  },
+  {
+    "slug": "syndicated-publisher",
+    "description": "Syndicated publisher suggestions",
+    "exampleUrl": "https://getpocket.com/explore/item/first-evidence-that-online-dating-is-changing-the-nature-of-society"
+  },
+  {
+    "slug": "syndicated-similar",
+    "description": "Syndicated similar items",
+    "exampleUrl": "https://getpocket.com/explore/item/first-evidence-that-online-dating-is-changing-the-nature-of-society"
+  }
+]
