@@ -5,12 +5,15 @@ import * as s3Deployment from '@aws-cdk/aws-s3-deployment'
 import * as cloudfront from '@aws-cdk/aws-cloudfront'
 import {OriginProtocolPolicy} from '@aws-cdk/aws-cloudfront'
 import {CacheControl} from "@aws-cdk/aws-s3-deployment/lib/bucket-deployment";
+import {IBucket} from "@aws-cdk/aws-s3";
 
 export class DocsStack extends cdk.Stack {
+  public readonly bucket: IBucket;
+
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    const bucket = new s3.Bucket(this, "bucket", {
+    this.bucket = new s3.Bucket(this, "bucket", {
       publicReadAccess: true,
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       websiteIndexDocument: 'index.html',
@@ -21,7 +24,7 @@ export class DocsStack extends cdk.Stack {
       originConfigs: [
         {
           customOriginSource: {
-            domainName: bucket.bucketWebsiteDomainName,
+            domainName: this.bucket.bucketWebsiteDomainName,
             originProtocolPolicy: OriginProtocolPolicy.HTTP_ONLY,
           },
           behaviors : [ {
@@ -31,19 +34,8 @@ export class DocsStack extends cdk.Stack {
       ]
     });
 
-    const deployment = new s3Deployment.BucketDeployment(this, "deployment", {
-      sources: [s3Deployment.Source.asset("./site")],
-      destinationBucket: bucket,
-      distribution: distribution,
-      distributionPaths: ['/*'],
-      cacheControl: [
-        CacheControl.maxAge(cdk.Duration.minutes(10)),
-        CacheControl.sMaxAge(cdk.Duration.days(30)),
-      ]
-    });
-
     new CfnOutput(this, 's3Url', {
-      value: bucket.bucketWebsiteDomainName
+      value: this.bucket.bucketWebsiteDomainName
     });
 
     new CfnOutput(this, 'cdnUrl', {

@@ -5,14 +5,14 @@ import { DocsStack } from '../lib/docs-stack';
 import { PipelineStack } from '../lib/pipeline-stack';
 
 const app = new cdk.App();
-new DocsStack(app, 'DataProductsDocumentation', {
+const props = {
   env: {
     region: 'us-east-1'
+  },
+  tags: {
+    service: 'DataProductDocs'
   }
-});
+}
 
-new PipelineStack(app, 'PipelineStack', {
-  env: {
-    region: 'us-east-1'
-  }
-});
+const docStack = new DocsStack(app, 'DataProductDocs', props);
+const pipelineStack = new PipelineStack(app, 'DataProductDocsPipelineStack', {...props, bucket: docStack.bucket});

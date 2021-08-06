@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../recommendation-api/.idea/recommendation-api.iml" filepath="$PROJECT_DIR$/../recommendation-api/.idea/recommendation-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/slate-docs.iml" filepath="$PROJECT_DIR$/.idea/slate-docs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/data-product-docs.iml" filepath="$PROJECT_DIR$/.idea/data-product-docs.iml" />
     </modules>
   </component>
 </project>

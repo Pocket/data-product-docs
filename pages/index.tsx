@@ -5,6 +5,7 @@ export default function Home() {
       <ul>
         <li><Link href="/slate/">Slates</Link></li>
         <li><Link href="/slate-lineup/">Slate Lineups</Link></li>
+        <li><Link href="/surface/">Surfaces</Link></li>
       </ul>
     );
 }

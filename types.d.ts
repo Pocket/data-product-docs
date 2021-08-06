@@ -31,3 +31,10 @@ export type ItemPreview = {
   resolvedUrl: string;
   excerpt: string;
 }
+
+export type Surface = {
+  slug: string;
+  name: string | null;
+  content: string; // Content is markdown
+  [prop: string]: string;
+}

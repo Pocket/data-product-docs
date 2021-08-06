@@ -3,6 +3,8 @@ import * as codepipeline from '@aws-cdk/aws-codepipeline';
 import * as codepipeline_actions from '@aws-cdk/aws-codepipeline-actions';
 import { App, Stack } from '@aws-cdk/core';
 import * as cdk from "@aws-cdk/core";
+import {IBucket} from "@aws-cdk/aws-s3";
+import {CacheControl} from "@aws-cdk/aws-s3-deployment/lib/bucket-deployment";
 
 const nodeEnv = 'prod';
 const codestarConnectionArn = 'arn:aws:codestar-connections:us-east-1:996905175585:connection/5fa5aa2b-a2d2-43e3-ab5a-72ececfc1870';
@@ -16,7 +18,7 @@ const environmentVariables = {
 const buildImage = codebuild.LinuxBuildImage.STANDARD_5_0;
 
 export class PipelineStack extends Stack {
-  constructor(app: App, id: string, props?: cdk.StackProps) {
+  constructor(app: App, id: string, props: cdk.StackProps & {bucket: IBucket}) {
     super(app, id, props);
 
     const nextBuild = new codebuild.PipelineProject(
@@ -62,16 +64,14 @@ export class PipelineStack extends Stack {
           },
           build: {
             commands: [
-              'mkdir ./site',
-              'cp -r $CODEBUILD_SRC_DIR_NextBuildOutput ./site',
               'npm run build',
               'npm run cdk synth -- -o dist',
             ],
           },
         },
         artifacts: {
-          'base-directory': 'dist',
-          files: ['*.template.json'],
+          'base-directory': '.aws/dist',
+          files: [`${stackName}template.json`],
         },
       }),
       environment: {
@@ -100,7 +100,7 @@ export class PipelineStack extends Stack {
           ],
         },
         {
-          stageName: 'BuildNext',
+          stageName: 'Build',
           actions: [
             new codepipeline_actions.CodeBuildAction({
               actionName: 'NextBuild',
@@ -108,18 +108,10 @@ export class PipelineStack extends Stack {
               input: sourceOutput,
               outputs: [nextBuildOutput],
             }),
-          ],
-        },
-        {
-          stageName: 'BuildCdk',
-          actions: [
             new codepipeline_actions.CodeBuildAction({
               actionName: 'CdkBuild',
               project: cdkBuild,
               input: sourceOutput,
-              extraInputs: [
-                nextBuildOutput,
-              ],
               outputs: [cdkBuildOutput],
             }),
           ],
@@ -129,15 +121,21 @@ export class PipelineStack extends Stack {
           actions: [
             new codepipeline_actions.CloudFormationCreateUpdateStackAction({
               actionName: 'CfnDeploy',
-              extraInputs: [
-                nextBuildOutput,
-              ],
               templatePath: cdkBuildOutput.atPath(
                 `${stackName}.template.json`
               ),
               stackName: stackName,
               adminPermissions: true,
             }),
+            new codepipeline_actions.S3DeployAction({
+              actionName: 'S3Deploy',
+              input: nextBuildOutput,
+              bucket: props.bucket,
+              cacheControl: [
+                CacheControl.maxAge(cdk.Duration.minutes(1)),
+                // CacheControl.sMaxAge(cdk.Duration.minutes(1)),
+              ]
+            })
           ],
         },
       ],
